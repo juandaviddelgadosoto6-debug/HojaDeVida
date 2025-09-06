@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi hoja de Vida</title>
+    <link rel="stylesheet"href="style.css">      <!-- Enlaza el archivo css (style.css) para dar estilos HTML-->
+</head>
+<body> <!-- Contiene todo el contenido visible de la pagina -->
+    <div class="container">  <!-- un contenedor general para organizar el contenido, la clase container se usa en CSS para dar estilos (como margenbes o anchos ),--> 
+    <!-- Emcabezado con nombre y foto-->
+    <header> <!--seccion semantica para el encabezado de la pagina (logono,nombre, titulo),-->
+    <img src="imagenes/juan1.jpg" alt="Mi foto" class="profile-pic">
+    <h1>Juan David Delgado Soto </h1>
+    <p>Desarrollador Web Junior</p>
+    </header>
+
+            <!-- Botón de imprimir-->
+             <div class="print-button-container">
+                <button onclick="window.print()" class="print-button"> 🖨️ Imprimir / guardar PDF</button>
+             </div>
+    
+    <!--Secciones pricipales-->
+    <section class="sction">
+        <h2> 📌 Imformacion Personal </h2>
+        <ul> <!--crea una lista desordenada (con viñetas), cada <li> es un item de la lista -->
+            <li><strong>Email:</strong>juandaviddelgadosoto6@gmail.com</li>
+            <li><strong>Telefono:</strong>+57 3117182636</li>
+            <li><strong>Ubicacion:</strong>Aguadas, caldas, Colombia</li>
+
+        </ul>
+    </section>
+
+    <section class="section">
+        <h2> 🎓 Educacion </h2>
+        <div class="item"><!--Un contenedor para agrupar elementos relacionados-->
+            <h3> Istitución Educativa Roberto Pelaez </h3>
+            <p> Bachiller Técnico en Diseño Web | 2025</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2> 💼 Experiencia laboral </h2>
+        <div class ="item">
+          <h3> Practicante sena | programacion web</h3>
+        <p> Diseño de interfaces con figma</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2> 🛠️ Habilidades </h2>
+        <ul class="skills"> <!--Lista desordenada con la clase skills para estilos personalizados (ej: mostrar habilidades)-->
+            <li>HTML/CSS</li>
+            <li>Figma</li>
+            <li>JavaScrip Básico</li>
+        </ul>
+    </section>
+</div>
+    
+    
+</body> <!--cierra el contener principal-->
+</html>
